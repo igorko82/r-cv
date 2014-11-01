@@ -7,7 +7,14 @@ gem 'pg'
 gem 'rails_12factor', group: :production
 gem 'unicorn'
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.3'
+#gem 'sass', '~> 3.4.6'
+#gem 'sass-rails', '~> 4.0.4'
+#gem 'bourbon'
+#gem 'neat'
+gem 'sass', '~>3.3.7'
+gem 'sass-globbing', '~>1.1'
+gem 'angularjs-rails', '~> 1.3.0'
+#gem 'compass', '~> 1.0.0.alpha.21'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .js.coffee assets and views

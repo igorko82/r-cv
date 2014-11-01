@@ -1,0 +1,138 @@
+@mixin clearlist {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+@mixin micro-clearfix {
+  &:before,
+  &:after {
+    content: " ";
+    display: table; 
+  }
+
+  &:after {
+    clear: both;
+  }
+
+  & {
+    *zoom: 1;
+  }
+}
+
+$S:     320px;   
+$M:     768px;     
+$L:     1170px;     
+
+// media queries
+
+@mixin MQ($canvas) {
+  @if $canvas == S {
+   @media only screen and (min-width: $S) { @content; } 
+  }
+  @else if $canvas == M {
+   @media only screen and (min-width: $M) { @content; } 
+  }
+  @else if $canvas == L {
+   @media only screen and (min-width: $L) { @content; } 
+  }
+}
+
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+  @return $remSize * 1rem;
+}
+
+@mixin font-size($size) {
+  font-size: $size;
+  font-size: calculateRem($size);
+}
+
+// border radius
+
+@mixin border-radius($radius:.25em) {
+  border-radius: $radius;
+}
+
+
+$main-text: #7f8c97; // main text
+$link: #acb7c0; // anchor tags
+$background: #e9f0f5; // body background color
+
+$color-1: #303e49; // blue dark
+$color-2: #c03b44; // red
+$color-3: #ffffff; // white
+$color-4: #75ce66; // green
+$color-5: #f0ca45; // yellow
+
+$color_bombay_approx: #b2b2c0;
+
+
+$white: #fff;
+$gray: #eee;
+$redie: #fd6e6e;
+$bluie: #394e63;
+$greenie: #27CBA9; //#28d8b3;
+$purlie: #aa98be;
+$gredie: #d1cbcb;
+$lightie: #f0f0f0;
+$grayie: #ECF0F1;
+$darkie: #345;
+
+// fonts 
+
+$primary-font: 'Droid Serif', serif;
+$secondary-font: 'Open Sans', sans-serif;
+
+@mixin button($color: $white, $bg: $bluie, $padding: 15px 40px) {
+    font-weight: 700;
+
+    position: relative;
+
+    display: inline-block;
+
+    padding: $padding;
+
+    cursor: pointer;
+    transition: all .3s;
+    transition: none;
+    text-transform: uppercase;
+
+    color: $color;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background: $bg;
+    box-shadow: 0 4px darken($bg, 5%);
+    &:hover {
+        top: 1px;
+
+        color: $color;
+        box-shadow: 0 3px darken($bg, 5%);
+    }
+    &:active {
+        top: 4px;
+
+        box-shadow: 0 0 darken($bg, 5%);
+    }
+}
+
+
+%opacity_trans {
+    -webkit-transition-property: opacity, -webkit-transform;
+    transition-property: opacity, transform;
+    -webkit-transition-duration: 1s;
+    transition-duration: 1s;
+}
+%push_trans {
+    -webkit-transform: translateY(400px);
+    transform: translateY(400px);
+    opacity: 0;
+}
+%reset_trans {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    margin-top: 30px !important;
+    opacity: 1;
+}

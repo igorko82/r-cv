@@ -1,0 +1,108 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic);
+
+
+
+@font-face {
+  font-family: 'igorko';
+  src: url('../fonts/igorko.eot?19530093');
+  src: url('../fonts/igorko.eot?19530093#iefix') format('embedded-opentype'),
+       url('../fonts/igorko.woff?19530093') format('woff'),
+       url('../fonts/igorko.ttf?19530093') format('truetype'),
+       url('../fonts/igorko.svg?19530093#igorko') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'igorko';
+    src: url('../fonts/igorko.svg?19530093#igorko') format('svg');
+  }
+}
+*/
+ 
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "igorko";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+     
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  font-size: 120%;
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.icon-spin5:before { content: '\e800'; } /* '' */
+.icon-firefox:before { content: '\e801'; } /* '' */
+.icon-chrome:before { content: '\e802'; } /* '' */
+.icon-opera:before { content: '\e803'; } /* '' */
+.icon-ie:before { content: '\e804'; } /* '' */
+.icon-emo-thumbsup:before { content: '\e805'; } /* '' */
+.icon-emo-wink:before { content: '\e806'; } /* '' */
+.icon-emo-happy:before { content: '\e807'; } /* '' */
+.icon-search:before { content: '\e808'; } /* '' */
+.icon-mail-alt:before { content: '\e809'; } /* '' */
+.icon-star:before { content: '\e80a'; } /* '' */
+.icon-star-empty:before { content: '\e80b'; } /* '' */
+.icon-star-half-alt:before { content: '\e80c'; } /* '' */
+.icon-user:before { content: '\e80d'; } /* '' */
+.icon-camera:before { content: '\e80e'; } /* '' */
+.icon-cancel:before { content: '\e80f'; } /* '' */
+.icon-plus:before { content: '\e810'; } /* '' */
+.icon-code:before { content: '\e811'; } /* '' */
+.icon-quote-left:before { content: '\e812'; } /* '' */
+.icon-quote-right:before { content: '\e813'; } /* '' */
+.icon-pencil:before { content: '\e814'; } /* '' */
+.icon-chat-empty:before { content: '\e815'; } /* '' */
+.icon-location:before { content: '\e816'; } /* '' */
+.icon-phone:before { content: '\e817'; } /* '' */
+.icon-down-open:before { content: '\e818'; } /* '' */
+.icon-left-open:before { content: '\e819'; } /* '' */
+.icon-right-open:before { content: '\e81a'; } /* '' */
+.icon-up-open:before { content: '\e81b'; } /* '' */
+.icon-laptop:before { content: '\e81c'; } /* '' */
+.icon-tablet:before { content: '\e81d'; } /* '' */
+.icon-mobile:before { content: '\e81e'; } /* '' */
+.icon-paper-plane:before { content: '\e81f'; } /* '' */
+.icon-rocket:before { content: '\e820'; } /* '' */
+.icon-bug:before { content: '\e821'; } /* '' */
+.icon-briefcase:before { content: '\e822'; } /* '' */
+.icon-chart-bar:before { content: '\e823'; } /* '' */
+.icon-graduation-cap:before { content: '\e824'; } /* '' */
+.icon-android:before { content: '\e825'; } /* '' */
+.icon-apple:before { content: '\e826'; } /* '' */
+.icon-bitbucket:before { content: '\e827'; } /* '' */
+.icon-css3:before { content: '\e828'; } /* '' */
+.icon-facebook:before { content: '\e829'; } /* '' */
+.icon-git:before { content: '\e82a'; } /* '' */
+.icon-google:before { content: '\e82b'; } /* '' */
+.icon-html5:before { content: '\e82c'; } /* '' */
+.icon-linkedin:before { content: '\e82d'; } /* '' */
+.icon-skype:before { content: '\e82e'; } /* '' */
+.icon-tumblr:before { content: '\e82f'; } /* '' */
+.icon-vkontakte:before { content: '\e830'; } /* '' */
+.icon-wordpress:before { content: '\e831'; } /* '' */
+.icon-flag-empty:before { content: '\e832'; } /* '' */
+.icon-cubes:before { content: '\e833'; } /* '' */
